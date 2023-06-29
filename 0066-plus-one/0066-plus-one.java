@@ -6,9 +6,10 @@ class Solution {
 		return digits;
 	}
 	digits[i] = 0;
-}
+    }
 
-digits = new int[digits.length + 1];
-digits[0] = 1;
-return digits;
-}}
+    digits = new int[digits.length + 1];
+    digits[0] = 1;
+    return digits;
+    }
+}
