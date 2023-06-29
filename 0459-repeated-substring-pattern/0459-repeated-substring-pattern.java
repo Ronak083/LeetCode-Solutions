@@ -3,7 +3,7 @@ class Solution {
          int l = s.length();
          String sub = "";
          String myS = "";
-         for(int i = l/2; i>0;i--){
+         for(int i = 1; i<=l/2;i++){
              if(l%i==0){
                  int m = l/i;
                  sub = s.substring(0,i);
