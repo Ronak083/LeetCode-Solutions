@@ -1,17 +1,22 @@
 class Solution {
-    public String mergeAlternately(String word1, String word2) {
-        int n = word1.length();
-        int m = word2.length();
-        String result = "";
-        int size;
-        if(n>m) size =n ;
-        else size = m;
+    public String mergeAlternately(String word, String word2) {
+        int size = 0;
+        if(word.length() <= word2.length()){
+            size = word2.length();
+        } else size = word.length();
 
-        for(int i = 0; i<size; i++){
-            if(i<n) result += word1.charAt(i);
-            if (i<m)result += word2.charAt(i);
+        String s = "";
+
+        for(int i = 0; i<size;i++){
+
+            if(i<word.length()){
+                s += word.charAt(i);
+            } 
+            if(i<word2.length()){
+                s += word2.charAt(i);
+            }
         }
 
-        return result;
+        return s;
     }
 }
